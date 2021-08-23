@@ -1,0 +1,91 @@
+body{
+    background-color: rgba(250, 233, 201, 0.2);
+}
+
+*{
+    font-size: 14px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: #202124;
+    line-height: 135%;
+    max-width: 100%;
+    min-width: 0%;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 1.5;
+    color: #202124;
+    margin-top: 12px;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+.mgt-12{
+    margin-top: 12px;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+.aic{
+    align-items: center;
+}
+
+// 客製化
+.container{
+    max-width: 640px;
+    margin: 40px auto 70px;
+    // box-shadow: rgb(69 69 69 / 40%) 0px 0px 12px 0px;
+    overflow: hidden;
+}
+
+.formCard{
+    // margin-top: 12px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #7f685e;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 24px;
+    padding-top: 22px;
+    position: relative;
+}
+
+.require{
+    font-size: 14px;
+    color: $red;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 20px;
+}
+
+@media (max-width:320px) {
+    h1{
+        font-size: 26px;
+        font-weight: 600;
+        color: #202124;
+        line-height: 135%;
+        max-width: 100%;
+        min-width: 0%;
+    }
+
+    .container{
+        margin: 0 auto 70px;
+    }
+}
+
+@media (min-width:321px) and (max-width:680px) {
+    .container{
+        margin: 0 auto 70px;
+    }
+
+}
