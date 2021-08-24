@@ -13,9 +13,4 @@ module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
         ? './'
         : '/',
-    // configureWebpack: config => {
-    //     if (process.env.NODE_ENV === "production") {
-    //       config.output.publicPath = "./";
-    //     }
-    //   }
 };

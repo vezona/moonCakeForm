@@ -7,14 +7,13 @@
             {{i.title}}
         </label>
         <!-- 子列表 -->
-        <div class="d-flex">
+        <div class="d-sm-flex">
             <!-- 左側圖片 -->
-          <div class="img-wrap col-4 pt-5">
-            <!-- <img :src="i.img" alt=""> -->
-            <img src="../assets/img/greenBeanEgg.png" alt="">
+          <div class="img-wrap col-12 col-sm-4 pt-sm-5 pt-3">
+            <img :src="i.img" alt="">
           </div>
         <!-- 選單 -->
-          <div class="col-8 px-5">
+          <div class="col-12 col-sm-8 px-sm-5">
             <div class="sublist mt-3 ms-4" v-for="n in i.number" :key="n.index">
               <input class="form-check-input" type="checkbox" :value="i.title" :id="n">
               <label class="form-check-label" :for="n">
@@ -40,10 +39,10 @@ export default {
     data() {
       return {
         tastes:[
-          {title: '綠豆沙蛋黃酥系列（蛋奶素）', img:'../assets/img/greenBeanEgg.png', number: ['6入禮盒 $360', '10入禮盒 $600', '12入禮盒 $720']},
-          {title: '烏豆沙蛋黃酥系列（蛋奶素）', img:'../assets/img/redBeanEgg.png', number: ['6入禮盒 $360', '10入禮盒 $600', '12入禮盒 $720']},
-          {title: '素綠豆沙蛋黃酥系列（奶素）', img:'../assets/img/VegGreenBean.png', number: ['6入禮盒 $360', '10入禮盒 $600', '12入禮盒 $720']},
-          {title: '素烏豆沙蛋黃酥系列 （奶素）', img:'../assets/img/VegRedBean.png.png', number: ['6入禮盒 $360', '10入禮盒 $600', '12入禮盒 $720']},
+          {title: '綠豆沙蛋黃酥系列（蛋奶素）', img: require('../assets/img/greenBeanEgg.png'), number: ['6入禮盒 $360', '10入禮盒 $600', '12入禮盒 $720']},
+          {title: '烏豆沙蛋黃酥系列（蛋奶素）', img: require('../assets/img/redBeanEgg.png'), number: ['6入禮盒 $360', '10入禮盒 $600', '12入禮盒 $720']},
+          {title: '素綠豆沙蛋黃酥系列（奶素）', img: require('../assets/img/VegGreenBean.png'), number: ['6入禮盒 $360', '10入禮盒 $600', '12入禮盒 $720']},
+          {title: '素烏豆沙蛋黃酥系列 （奶素）', img: require('../assets/img/VegRedBean.png.png'), number: ['6入禮盒 $360', '10入禮盒 $600', '12入禮盒 $720']},
           {title: '綜合系列', img:'', number: ['6入禮盒 $360', '10入禮盒 $600', '12入禮盒 $720']}],
 
         mix:['綠豆沙 (蛋奶素)','綠豆沙 (奶素)', '烏豆沙(蛋奶素)', '烏豆沙(奶素)']

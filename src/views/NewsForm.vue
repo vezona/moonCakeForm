@@ -100,7 +100,7 @@ export default {
               if (typeof dataLayer !== 'undefined') {
                 dataLayer.push({ event: 'hf-news-2021-form-success' });
               }
-              alert('感謝您，我們會盡快與您聯繫的(拜託讓我通過!!!)');
+              alert('感謝您，我們會盡快與您聯繫的');
             }
           });
       }
@@ -179,13 +179,14 @@ form button{
     border-radius: 0px;
     margin: 0 0;
     width: 100vw;
-    height: 220px;
+    height: 50vw;
   }
 }
 
 @media (min-width:321px) and (max-width:680px) {
     .img-wrap{
     border-radius: 0px;
+    height: 50vw;
   }
 
 }
