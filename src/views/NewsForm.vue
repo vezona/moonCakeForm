@@ -100,7 +100,7 @@ export default {
               if (typeof dataLayer !== 'undefined') {
                 dataLayer.push({ event: 'hf-news-2021-form-success' });
               }
-              alert('感謝您，我們會盡快與您聯繫的');
+              alert('感謝您，我們會盡快與您聯繫的(拜託讓我通過!!!)');
             }
           });
       }
