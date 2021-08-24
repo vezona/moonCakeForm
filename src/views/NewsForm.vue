@@ -138,7 +138,7 @@ export default {
     border: 1px solid #dadce0;
     border-radius: 8px;
     width: 100%;
-    height: 40vw;
+    height: 30vw;
     box-shadow: rgb(69 69 69 / 40%) 0px 0px 20px 0px;
 }
 
